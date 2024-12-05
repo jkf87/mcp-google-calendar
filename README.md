@@ -20,7 +20,7 @@ A Model Context Protocol (MCP) server implementation that enables AI assistants 
  
 1. Clone the repository: 
 ```bash 
-git clone [your-repo-url] 
+git clone [https://github.com/markelaugust74/mcp-google-calendar.git] 
 cd mcp-google-calendar 
 ``` 
  
