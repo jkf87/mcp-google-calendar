@@ -1,0 +1,26 @@
+@"
+{
+  "name": "mcp-google-calendar",
+  "version": "1.0.0",
+  "description": "MCP server implementation for Google Calendar integration",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "auth": "node auth.js"
+  },
+  "keywords": [
+    "mcp",
+    "google-calendar",
+    "claude",
+    "ai-assistant"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.5.0",
+    "googleapis": "^129.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
+"@ | Out-File -FilePath "package.json" -Encoding utf8
