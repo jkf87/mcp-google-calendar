@@ -64,8 +64,10 @@ npm install
 
 1. "API 및 서비스" > "사용자 인증 정보"로 이동합니다.
 2. "사용자 인증 정보 만들기" > "OAuth 클라이언트 ID" 선택합니다.
+![Google OAuth](./screenshots/setup-google-api.png)
+
 3. 애플리케이션 유형은 "웹 애플리케이션"을 선택합니다.
-![Google API 설정 화면](./screenshots/setup-google-api.png)
+![웹 애플리케이션](./screenshots/oauth-consent.png)
 
 4. 승인된 리디렉션 URI에 `http://localhost:3030/oauth2callback`을 추가합니다. (저는 3000이 이미 사용중이라 3030으로 했습니다)
 ![리디렉션 URI 설정](./screenshots/redirect-uri.png)
@@ -115,13 +117,13 @@ node auth.js
 ### 3. 인증 코드 얻기
 
 1. 표시된 URL을 브라우저에서 엽니다.
-![Claude Desktop 설정](./screenshots/claude-desktop-config.png)
+![인증코드얻기1](./screenshots/claude-desktop-config.png)
 
 2. Google 계정으로 로그인하고 권한을 부여합니다.
 
 3. 리디렉션된 URL에서 `code=` 다음에 오는 값을 복사합니다.
 
-![Claude를 통한 Google Calendar 일정 추가](./screenshots/claude-calendar-event.png)
+![인증코드얻기2](./screenshots/claude-calendar-event.png)
    ```
    http://localhost:3030/oauth2callback?code=4/0AQSTg...  <-- 이 부분 복사
    ```
