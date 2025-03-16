@@ -58,12 +58,17 @@ npm install
    - 왼쪽 메뉴에서 "API 및 서비스" > "라이브러리" 선택
    - "Google Calendar API" 검색 후 활성화
 
+![Google API 설정 화면](./screenshots/setup-google-api.png)
+
 ### 2. OAuth 클라이언트 ID 생성
 
 1. "API 및 서비스" > "사용자 인증 정보"로 이동합니다.
 2. "사용자 인증 정보 만들기" > "OAuth 클라이언트 ID" 선택합니다.
 3. 애플리케이션 유형은 "웹 애플리케이션"을 선택합니다.
 4. 승인된 리디렉션 URI에 `http://localhost:3030/oauth2callback`을 추가합니다. (저는 3000이 이미 사용중이라 3030으로 했습니다)
+
+![리디렉션 URI 설정](./screenshots/redirect-uri.png)
+
 5. "만들기"를 클릭하여 클라이언트 ID와 시크릿을 생성합니다.
 
 ### 3. 환경 변수 설정
@@ -110,6 +115,9 @@ node auth.js
 
 1. 표시된 URL을 브라우저에서 엽니다.
 2. Google 계정으로 로그인하고 권한을 부여합니다.
+
+![OAuth 동의 화면](./screenshots/oauth-consent.png)
+
 3. 리디렉션된 URL에서 `code=` 다음에 오는 값을 복사합니다.
    ```
    http://localhost:3030/oauth2callback?code=4/0AQSTg...  <-- 이 부분 복사
@@ -183,6 +191,8 @@ const event = {
 }
 ```
 
+![Claude Desktop 설정](./screenshots/claude-desktop-config.png)
+
 ### 3. Claude for Desktop 재시작
 
 Claude for Desktop을 완전히 종료하고 다시 시작합니다.
@@ -225,6 +235,8 @@ Claude for Desktop에서 다음과 같이 메시지를 입력하여 일정을 �
 ```
 
 Claude는 자동으로 MCP 서버를 통해 Google Calendar에 일정을 추가합니다.
+
+![Claude를 통한 Google Calendar 일정 추가](./screenshots/claude-calendar-event.png)
 
 ---
 
