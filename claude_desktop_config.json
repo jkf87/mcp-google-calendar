@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+      "google-calendar": {
+        "command": "D:\\mcp\\mcp-google-calendar\\run-calendar.bat",
+        "args": []
+      }
+    }
+  }
+
+  
